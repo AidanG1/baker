@@ -1,0 +1,355 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "baker",
+      "version": "0.0.1",
+      "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "package": "svelte-kit package",
+        "preview": "svelte-kit preview",
+        "prepare": "svelte-kit sync",
+        "test": "playwright test",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+        "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+      },
+      "devDependencies": {
+        "@playwright/test": "^1.19.1",
+        "@sveltejs/adapter-auto": "next",
+        "@sveltejs/kit": "next",
+        "@typescript-eslint/eslint-plugin": "^5.10.1",
+        "@typescript-eslint/parser": "^5.10.1",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-svelte3": "^3.2.1",
+        "prettier": "^2.5.1",
+        "prettier-plugin-svelte": "^2.5.0",
+        "svelte": "^3.44.0",
+        "svelte-check": "^2.2.6",
+        "svelte-preprocess": "^4.10.1",
+        "tslib": "^2.3.1",
+        "typescript": "~4.6.2"
+      },
+      "type": "module"
+    },
+    "prefix": "C:\\Users\\aweso\\JSProjects\\baker"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "C:\\Users\\aweso\\.pnpm-store\\v3",
+    "virtualStoreDir": "C:\\Users\\aweso\\JSProjects\\baker\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "C:\\Users\\aweso\\JSProjects\\baker",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "6 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "size": 8041,
+    "status": "started"
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "^8.3.0"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.5.0",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.5.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "^2.5.1"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.5.1",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "12 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.5.0",
+    "size": 5284,
+    "status": "started"
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.5.0",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-svelte3/3.4.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-svelte3",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-svelte3/3.4.1",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "16 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/prettier/2.5.1",
+    "size": 4582148,
+    "status": "started"
+  },
+  "17 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/eslint-plugin-svelte3/3.4.1",
+    "size": 13139,
+    "status": "started"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-svelte3/3.4.1",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier-plugin-svelte/2.6.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier-plugin-svelte",
+      "rawSpec": "^2.5.0"
+    }
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-plugin-svelte/2.6.0",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "21 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-check/2.4.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-check",
+      "rawSpec": "^2.2.6"
+    }
+  },
+  "22 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-check/2.4.5",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "23 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/prettier-plugin-svelte/2.6.0",
+    "size": 48971,
+    "status": "started"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-plugin-svelte/2.6.0",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "25 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/svelte-check/2.4.5",
+    "size": 684184,
+    "status": "started"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/adapter-auto/1.0.0-next.31",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@sveltejs/adapter-auto",
+      "rawSpec": "next"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/adapter-auto/1.0.0-next.31",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "28 debug pnpm:update-check": {
+    "currentVersion": "6.32.3",
+    "latestVersion": "6.32.3"
+  },
+  "29 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-preprocess/4.10.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-preprocess",
+      "rawSpec": "^4.10.1"
+    }
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.10.4",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "31 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/7.32.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "^7.32.0"
+    }
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "33 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.10.4",
+    "size": 35103,
+    "status": "started"
+  },
+  "34 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "size": 672397,
+    "status": "started"
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.10.4",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "36 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@sveltejs/adapter-auto/1.0.0-next.31",
+    "size": 2384,
+    "status": "started"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/adapter-auto/1.0.0-next.31",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "38 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.295",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@sveltejs/kit",
+      "rawSpec": "next"
+    }
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.295",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "40 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte/3.46.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte",
+      "rawSpec": "^3.44.0"
+    }
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.46.4",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "42 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/svelte/3.46.4",
+    "size": 1414049,
+    "status": "started"
+  },
+  "43 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.295",
+    "size": 499698,
+    "status": "started"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-check/2.4.5",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.295",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "47 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@playwright/test/1.19.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@playwright/test",
+      "rawSpec": "^1.19.1"
+    }
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@playwright/test/1.19.2",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "resolved"
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.46.4",
+    "requester": "C:\\Users\\aweso\\JSProjects\\baker",
+    "status": "fetched"
+  },
+  "50 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@playwright/test/1.19.2",
+    "size": 131571,
+    "status": "started"
+  },
+  "51 warn pnpm:install-check": {
+    "message": "Unsupported engine for registry.npmjs.org/@typescript-eslint/eslint-plugin/5.14.0: wanted: {\"node\":\"^12.22.0 || ^14.17.0 || >=16.0.0\"} (current: {\"node\":\"v14.16.0\",\"pnpm\":\"6.32.3\"})",
+    "prefix": "C:\\Users\\aweso\\JSProjects\\baker"
+  },
+  "52 error pnpm": {
+    "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+    "packageId": "registry.npmjs.org/@typescript-eslint/eslint-plugin/5.14.0",
+    "wanted": {
+      "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+    },
+    "current": {
+      "node": "v14.16.0",
+      "pnpm": "6.32.3"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "Unsupported engine for registry.npmjs.org/@typescript-eslint/eslint-plugin/5.14.0: wanted: {\"node\":\"^12.22.0 || ^14.17.0 || >=16.0.0\"} (current: {\"node\":\"v14.16.0\",\"pnpm\":\"6.32.3\"})",
+      "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+      "stack": "pnpm: Unsupported engine for registry.npmjs.org/@typescript-eslint/eslint-plugin/5.14.0: wanted: {\"node\":\"^12.22.0 || ^14.17.0 || >=16.0.0\"} (current: {\"node\":\"v14.16.0\",\"pnpm\":\"6.32.3\"})\n    at checkEngine (C:\\Users\\aweso\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:41280:16)\n    at checkPackage (C:\\Users\\aweso\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:43376:104)\n    at packageIsInstallable (C:\\Users\\aweso\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:43346:20)\n    at resolveAndFetch (C:\\Users\\aweso\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:74507:117)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async resolveDependency (C:\\Users\\aweso\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:116112:23)\n    at async resolveDependenciesOfDependency (C:\\Users\\aweso\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:115947:39)\n    at async Promise.all (index 3)\n    at async resolveDependencies (C:\\Users\\aweso\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:115914:29)"
+    }
+  }
+}
