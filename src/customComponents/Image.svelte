@@ -10,14 +10,13 @@
 		_key: string;
 		_type: string;
 	}>;
-	$: block = portableText.block;
-
-	const query = '*[_type == "image" && _id == $ref][0]';
-	const query_params = { ref: block.asset._ref };
-	let image = { url: '', alt: '' };
-	bakerClient.fetch(query, query_params).then((img) => {
-		image = img;
-	});
+	async function get_img() {
+		const query = '*[_type == "image" && _id == $ref][0]';
+		const query_params = { ref: block.asset._ref };
+		const { img } = await bakerClient.fetch(query, query_params);
+        return img
+	}
+	$: image = get_img();
 </script>
 
 <figure>
