@@ -10,10 +10,16 @@
 	<title>{page.title}</title>
 </svelte:head>
 <PortableText
-	blocks={[page.body]}
+	blocks={page.body}
 	serializers={{
 		types: {
 			image: Image
+		},
+		blockStyles: {
+			normal: CustomParagraph,
+			h1: CustomHeading,
+			h2: CustomHeading,
+			h3: CustomHeading,
 		}
 	}}
 />
