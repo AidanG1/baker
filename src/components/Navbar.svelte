@@ -1,24 +1,27 @@
-<script>
+<script context="module">
 	import bakerClient from '$lib/sanity';
-
-	async function getNav() {
-		const query = '*[_type == "nav" && nav_type == "navbar"][0]';
-		const nav = await bakerClient.fetch(query);
+	export async function load({}) {
+		const query = '*[_type == "page"]';
+		const nav = await bakerClient.fetch(query, {});
+        console.log(nav)
 		if (nav) {
-			return nav;
+			return {
+				props: {
+					nav: nav
+				}
+			};
 		} else {
-			return [];
+			return {
+				props: {
+					nav: []
+				}
+			};
 		}
 	}
+</script>
 
-	let nav = [];
-	getNav()
-		.then((navbar) => {
-			nav = navbar;
-		})
-		.catch((error) => {
-			console.log(error);
-		});
+<script>
+	export let nav;
 	console.log(nav);
 </script>
 

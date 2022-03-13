@@ -2,7 +2,8 @@
 	import '@kahi-ui/framework/dist/kahi-ui.framework.min.css';
 	import '@kahi-ui/framework/dist/kahi-ui.theme.default.min.css';
 	import { Anchor, Box, Divider, Menu, Omni, Popover, Text, Container } from '@kahi-ui/framework';
-	import Navbar from '../components/Navbar.svelte';
+	// @ts-ignore
+    import Navbar from '../components/Navbar.svelte';
 	const { Footer, Header, Section } = Omni;
 </script>
 
