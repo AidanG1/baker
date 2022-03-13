@@ -6,12 +6,7 @@ type block = {
     style: string
 }
 
-interface pageType {
-    _created_at: string;
-    _id: string;
-    _updated_at: string;
-    _rev: string;
-    _type: string;
+type pageType = {
     body: Array<block>;
     slug: object;
     title: string;

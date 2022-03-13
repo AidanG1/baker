@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { BlockProps } from '@portabletext/svelte';
-	import bakerClient from '$lib/sanity';
-
+	import urlFor, { captionFor } from '$lib/url_builder';
 	export let portableText: BlockProps<{
 		asset: {
 			_ref: string;
@@ -9,16 +8,13 @@
 		};
 		_key: string;
 		_type: string;
+		caption: string;
 	}>;
-	async function get_img() {
-		const query = '*[_type == "image" && _id == $ref][0]';
-		const query_params = { ref: block.asset._ref };
-		const { img } = await bakerClient.fetch(query, query_params);
-        return img
-	}
-	$: image = get_img();
+	$: asset = portableText.block.asset;
+	$: caption = portableText.block.caption;
 </script>
 
 <figure>
-	<img src={image.url} alt={image.alt} />
+	<img src={urlFor(asset._ref).url()} alt={caption} />
+	<figcaption>{caption}</figcaption>
 </figure>
