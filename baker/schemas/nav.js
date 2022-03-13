@@ -4,14 +4,10 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'name',
-      title: 'Name',
-      type: 'string',
-    },
-    {
       name: 'nav_type', // navbar or footer
       title: 'Nav Type',
       type: 'string',
+      options: ['navbar', 'footer']
     },
     {
       name: 'content',
@@ -28,7 +24,7 @@ export default {
   ],
   preview: {
     select: {
-      title: 'name',
+      title: 'nav_type',
     },
   },
 }

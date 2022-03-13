@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@kahi-ui/framework': ^0.6.3
   '@playwright/test': ^1.19.1
   '@portabletext/svelte': ^0.2.0
   '@sanity/client': ^3.2.0
@@ -21,6 +22,7 @@ specifiers:
   typescript: ~4.6.2
 
 dependencies:
+  '@kahi-ui/framework': 0.6.3
   '@sanity/client': 3.2.0
   '@sanity/image-url': 1.0.1
 
@@ -640,6 +642,12 @@ packages:
       '@types/yargs': 16.0.4
       chalk: 4.1.2
     dev: true
+
+  /@kahi-ui/framework/0.6.3:
+    resolution: {integrity: sha512-4XTbB1a33fiAuZsDhtWomQd0mctIGQvQdGALkA0vDF4o1CzHbu011Qa7NPREB25cvgd7o0zg6D2qZGYsK9Z7ng==}
+    dependencies:
+      svelte: 3.46.4
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3046,7 +3054,6 @@ packages:
   /svelte/3.46.4:
     resolution: {integrity: sha512-qKJzw6DpA33CIa+C/rGp4AUdSfii0DOTCzj/2YpSKKayw5WGSS624Et9L1nU1k2OVRS9vaENQXp2CVZNU+xvIg==}
     engines: {node: '>= 8'}
-    dev: true
 
   /table/6.8.0:
     resolution: {integrity: sha512-s/fitrbVeEyHKFa7mFdkuQMWlH1Wgw/yEXMt5xACT4ZpzWFluehAxRtUUQKPuWhaLAWhFcVx6w3oC8VKaUfPGA==}
