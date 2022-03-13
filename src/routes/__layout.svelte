@@ -9,11 +9,7 @@
 <Navbar />
 <Omni.Container>
 	<Omni.Header>
-		<Anchor href="#">Kahi UI</Anchor>
-		<Divider orientation="vertical" />
-		<Anchor href="#">
-			<Text is="small">v0.6.0</Text>
-		</Anchor>
+		<Anchor href="/"><img src="/bakerCrest.svg" alt="Baker College Logo" width=50>Baker College</Anchor>
 	</Omni.Header>
 
 	<Omni.Section hidden={['mobile', 'tablet']}>
