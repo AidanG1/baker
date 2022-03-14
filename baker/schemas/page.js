@@ -7,6 +7,9 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
+      options: {
+        isHighlighted: true
+      }
     },
     {
       name: 'slug',
@@ -15,6 +18,7 @@ export default {
       options: {
         source: 'title',
         maxLength: 96,
+        isHighlighted: true
       },
     },
     {

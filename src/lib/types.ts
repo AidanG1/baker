@@ -6,10 +6,17 @@ type block = {
     style: string
 }
 
-type pageType = {
+interface pageType {
     body: Array<block>;
     slug: object;
     title: string;
 }
 
+interface dropdownType {
+    title: string;
+    pages: Array<pageType>;
+}
+
+
 export type { pageType }
+export type { dropdownType }

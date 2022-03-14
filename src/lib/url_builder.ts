@@ -4,7 +4,6 @@ import bakerClient from './sanity'
 const builder = imageUrlBuilder(bakerClient)
 
 function urlFor(source: string) {
-    console.log
     return builder.image(source)
 }
 
