@@ -6,11 +6,17 @@ type block = {
     style: string
 }
 
+type file = {
+    originalFilename: string;
+    url: string;
+}
+
 interface pageType {
     body: Array<block>;
     slug: object;
     title: string;
     _updatedAt: string;
+    files: Array<file>
 }
 
 interface dropdownType {
