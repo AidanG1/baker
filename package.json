@@ -36,6 +36,7 @@
   "dependencies": {
     "@kahi-ui/framework": "^0.6.3",
     "@sanity/client": "^3.2.0",
-    "@sanity/image-url": "^1.0.1"
+    "@sanity/image-url": "^1.0.1",
+    "url": "^0.11.0"
   }
 }

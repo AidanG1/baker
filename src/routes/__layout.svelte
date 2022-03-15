@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
 	import bakerClient from '$lib/sanity';
 	export async function load() {
 		const outer_query = '*[_type == "nav" && nav_type == "navbar"][0] {content}';
@@ -17,17 +17,18 @@
 			}
 		};
 	}
-</script>
-
+</script> -->
 <script lang="ts">
 	import '@kahi-ui/framework/dist/kahi-ui.framework.min.css';
 	import '@kahi-ui/framework/dist/kahi-ui.theme.default.min.css';
 	import { Anchor, Box, Divider, Menu, Omni, Popover, Text, Container } from '@kahi-ui/framework';
 	const { Footer, Header, Section } = Omni;
 	import type { pageType, dropdownType } from '$lib/types';
-	export let nav: Array<pageType> | Array<dropdownType>;
+	// export let nav: Array<pageType> | Array<dropdownType>;
+	import Nav from '../components/Nav.svelte';
 </script>
 
+<Nav />
 <Omni.Container>
 	<Omni.Header>
 		<a href="/"><img src="/bakerCrest.svg" alt="Baker College Logo" width="50" />Baker College</a>
@@ -35,7 +36,7 @@
 
 	<Omni.Section hidden={['mobile', 'tablet']}>
 		<Menu.Container orientation="horizontal">
-			{#each nav as nav_item}
+			<!-- {#each nav as nav_item}
 				{#if nav_item._type == 'page'}
 					<Menu.Button><a href={nav_item.slug.current}>{nav_item.title}</a></Menu.Button>
 				{:else}
@@ -44,7 +45,7 @@
 						>
 					{/each}
 				{/if}
-			{/each}
+			{/each} -->
 		</Menu.Container>
 	</Omni.Section>
 
