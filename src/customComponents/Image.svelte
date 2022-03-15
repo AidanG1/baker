@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { BlockProps } from '@portabletext/svelte';
-	import { Text } from '@kahi-ui/framework';
 	import urlFor, { captionFor } from '$lib/url_builder';
 	export let portableText: BlockProps<{
 		asset: {
@@ -17,7 +16,7 @@
 
 <figure>
 	<img src={urlFor(asset._ref).url()} alt={caption} />
-	<figcaption><Text sizing="small" palette="accent">{caption}</Text></figcaption>
+	<figcaption>{caption}</figcaption>
 </figure>
 
 <style>
