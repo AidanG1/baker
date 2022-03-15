@@ -10,6 +10,7 @@ interface pageType {
     body: Array<block>;
     slug: object;
     title: string;
+    _updatedAt: string;
 }
 
 interface dropdownType {

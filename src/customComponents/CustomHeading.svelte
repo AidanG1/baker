@@ -9,7 +9,7 @@
 	$: anchorId = `heading-${block._key}`;
 </script>
 
-<div class="relative mt-10'" id={anchorId}>
+<div class="relative" id={anchorId}>
 	{#if style == 'h1'}
 		<h1>
 			<slot />
@@ -54,3 +54,18 @@
 		</h6>
 	{/if}
 </div>
+
+<!-- <style>
+	h1 {
+		font-size: 4em;
+	}
+	h2 {
+		font-size: 3em;
+	}
+	h3 {
+		font-size: 2.5em;
+	}
+	h4 {
+		font-size: 2em;
+	}
+</style> -->

@@ -6,6 +6,6 @@
 </script>
 
 <Nav />
-<main class="container p-2">
+<main class="container p-2 place-content-center">
 	<slot />
 </main>

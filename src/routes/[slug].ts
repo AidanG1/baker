@@ -1,7 +1,7 @@
 import bakerClient from '$lib/sanity';
 
 export async function get({ params }) {
-    const query = '*[_type == "page" && slug.current == $slug][0] {title, slug, body}';
+    const query = '*[_type == "page" && slug.current == $slug][0] {title, slug, body, _updatedAt}';
     const query_params = { slug: params.slug };
     const page = await bakerClient.fetch(query, query_params)
     if (page) {
