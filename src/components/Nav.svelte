@@ -25,6 +25,7 @@
 				tabindex="0"
 				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 			>
+				<li><a sveltekit:prefetch href="/">Home</a></li>
 				{#each $nav_items as nav_page}
 					{#if nav_page._type == 'page'}
 						<li><a sveltekit:prefetch href={nav_page.slug.current}>{nav_page.title}</a></li>
@@ -50,12 +51,13 @@
 				{/each}
 			</ul>
 		</div>
-		<a class="btn btn-ghost normal-case text-xl" href="/"
-			>Baker <img src="bakerCrest.svg" alt="Baker Logo" width="45" /></a
-		>
+		<a class="btn btn-ghost normal-case text-3xl" href="/">
+			Baker <img src="bakerCrest.svg" alt="Baker Logo" width="45" />
+		</a>
 	</div>
-	<div class="navbar-center hidden md:flex">
+	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal p-0">
+			<li><a sveltekit:prefetch href="/">Home</a></li>
 			{#each $nav_items as nav_page}
 				{#if nav_page._type == 'page'}
 					<li><a sveltekit:prefetch href={nav_page.slug.current}>{nav_page.title}</a></li>
@@ -88,3 +90,9 @@
 		>
 	</div>
 </div>
+
+<style>
+	li {
+		font-size: larger;
+	}
+</style>

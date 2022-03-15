@@ -5,3 +5,9 @@
 html {
     transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+@layer base {
+    html {
+        font-family: Georgia, Proxima Nova, system-ui, sans-serif;
+    }
+}

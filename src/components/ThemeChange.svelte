@@ -22,7 +22,7 @@
 
 <select class="select w-full max-w-xs select-bordered mr-1" bind:value={theme_choice}>
 	{#each theme_options as theme_option}
-		<option>{theme_option}</option>
+		<option value={theme_option}>Theme: {theme_option.toLocaleUpperCase()}</option>
 	{/each}
 </select>
 
