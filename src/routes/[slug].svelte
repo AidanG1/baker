@@ -5,17 +5,14 @@
 	import CustomParagraph from '../customComponents/CustomParagraph.svelte';
 	export let page: pageType;
 	import PortableText from '@portabletext/svelte';
-	import { Heading, Container } from '@kahi-ui/framework';
+	import BackToTop from '../components/BackToTop.svelte';
 	// console.log(page);
 </script>
 
 <svelte:head>
 	<title>{page.title}</title>
 </svelte:head>
-<Container is="article">
-	<div id="article-heading">
-		<Heading is="h1" alignment_x="center">{page.title}</Heading>
-	</div>
+<article class="prose place-self-center max-w-none">
 	<PortableText
 		blocks={page.body}
 		serializers={{
@@ -30,10 +27,6 @@
 			}
 		}}
 	/>
-</Container>
-
-<style>
-	#article-heading {
-		margin-bottom: 3vh;
-	}
-</style>
+	<BackToTop />
+	<p>Last updated: {page._updatedAt.slice(0, 10)}</p>
+</article>
