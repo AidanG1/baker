@@ -1,9 +1,10 @@
 <script>
 	import bakerClient from '$lib/sanity';
+	import ThemeChange from './ThemeChange.svelte';
 	import { nav_items } from '../stores/navStore';
 	let nav_pages = [];
 	if ($nav_items.length == 0) {
-		console.log('7')
+		console.log('7');
 		async function load() {
 			const outer_query = '*[_type == "nav" && nav_type == "navbar"][0] {content}';
 			const nav = await bakerClient.fetch(outer_query);
@@ -106,6 +107,7 @@
 		</ul>
 	</div>
 	<div class="navbar-end">
+		<ThemeChange />
 		<a class="btn" href="https://github.com/AidanG1/baker" target="_blank"
 			><img src="octocat1.png" alt="Github Logo" width="45" /></a
 		>

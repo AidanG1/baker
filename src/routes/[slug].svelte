@@ -28,9 +28,3 @@
 		}
 	}}
 />
-
-<style>
-	#article-heading {
-		margin-bottom: 3vh;
-	}
-</style>
