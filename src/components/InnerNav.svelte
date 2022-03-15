@@ -1,4 +1,4 @@
-<script lang="ts">
+<script context="module">
 	import { nav_items } from '../stores/navStore';
 </script>
 
@@ -8,7 +8,7 @@
 		<li><a sveltekit:prefetch href={nav_page.slug.current}>{nav_page.title}</a></li>
 	{:else}
 		<div class="dropdown dropdown-hover">
-			<label tabindex="0" class="btn m-1">{nav_page.title}</label>
+			<span tabindex="0" class="btn m-1">{nav_page.title}</span>
 			<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
 				{#each nav_page.pages as nav_dropdown_page}
 					<li>

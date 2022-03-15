@@ -6,7 +6,7 @@
 	export let page: pageType;
 	import PortableText from '@portabletext/svelte';
 	import BackToTop from '../components/BackToTop.svelte';
-	console.log(page);
+	// console.log(page);
 </script>
 
 <svelte:head>
