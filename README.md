@@ -1,22 +1,16 @@
-# create-svelte
+# <a href="https://baker.pages.dev/" target="_blank">Baker College</a>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is the website for Baker College created by Aidan Gerber. It is built with SvelteKit and Sanity.
+# Table of Contents
+1. [Hosted](#hosted)
+1. [Developing](#developing)
+2. [Building](#building)
+3. [Testing](#testing)
+4. [Sanity](#sanity)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
-
-## Developing
+## Hosted Version<a name="hosted"></a>
+This website is currently hosted at <a href="https://baker.pages.dev/" target="_blank">baker.pages.dev</a>. The Sanity studio is hosted at <a href="https://baker.sanity.studio/" target="_blank">baker.sanity.studio</a>. To edit website content make a Sanity account and contact me with your account and I will add you to the content editor.
+## Developing<a name="developing"></a>
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -27,7 +21,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Building<a name="building"></a>
 
 To create a production version of your app:
 
@@ -37,4 +31,26 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This app comes with the adapter for Cloudflare Pages but can be easily substituted for any hosting platform using a SvelteKit adapter.
+
+## Testing<a name="testing"></a>
+
+This app comes with Playwright. To initialize Playwright on your machine:
+```bash
+npx playwright install
+```
+
+To run tests:
+```bash
+npm run test
+```
+
+## Sanity<a name="sanity"></a>
+In the /baker directory is the Sanity instance. To use Sanity: 
+
+```bash
+npm install -g @sanity/cli
+npm install
+sanity init
+sanity deploy
+```
