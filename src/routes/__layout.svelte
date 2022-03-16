@@ -12,7 +12,7 @@
 </script>
 
 <Nav />
-<main class="container p-2 place-content-center">
+<main class="container p-2 place-content-center place-self-center max-w-none">
 	<PageTransition {url}>
 		<slot />
 	</PageTransition>
