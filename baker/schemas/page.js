@@ -26,6 +26,14 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
+    {
+      name: 'files',
+      title: 'Files',
+      type: 'array',
+      of: [{
+        type: 'file',
+      }],
+    },
   ],
 
   preview: {

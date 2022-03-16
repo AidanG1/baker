@@ -12,21 +12,28 @@
 <svelte:head>
 	<title>{page.title}</title>
 </svelte:head>
-<article class="prose place-self-center max-w-none">
-	<PortableText
-		blocks={page.body}
-		serializers={{
-			types: {
-				image: Image
-			},
-			blockStyles: {
-				normal: CustomParagraph,
-				h1: CustomHeading,
-				h2: CustomHeading,
-				h3: CustomHeading
-			}
-		}}
-	/>
+<article class="prose place-self-center lg:max-w-none">
+	{#if page.body !== null}
+		<PortableText
+			blocks={page.body}
+			serializers={{
+				types: {
+					image: Image
+				},
+				blockStyles: {
+					normal: CustomParagraph,
+					h1: CustomHeading,
+					h2: CustomHeading,
+					h3: CustomHeading
+				}
+			}}
+		/>
+	{/if}
+	{#if page.files !== null}
+		{#each page.files as file}
+			<a class="btn" href={file.url} target="_blank">{file.originalFilename}</a>
+		{/each}
+	{/if}
 	<BackToTop />
 	<p>Last updated: {page._updatedAt.slice(0, 10)}</p>
 </article>

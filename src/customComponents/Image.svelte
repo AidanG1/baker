@@ -15,7 +15,7 @@
 </script>
 
 <figure>
-	<img src={urlFor(asset._ref).url()} alt={caption} />
+	<img src={urlFor(asset._ref).url()} alt={caption} loading="lazy" />
 	<figcaption>{caption}</figcaption>
 </figure>
 
