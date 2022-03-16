@@ -16,7 +16,9 @@
 
 <figure>
 	<img src={urlFor(asset._ref).width(500).url()} alt={caption} loading="lazy" />
-	<figcaption>{caption}</figcaption>
+	{#if caption !== undefined}
+		<figcaption>{caption}</figcaption>
+	{/if}
 </figure>
 
 <style>
