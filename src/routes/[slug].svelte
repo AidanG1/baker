@@ -12,7 +12,7 @@
 <svelte:head>
 	<title>{page.title}</title>
 </svelte:head>
-<article class="prose place-self-center lg:max-w-none">
+<article class="prose place-self-center text-center text-lg lg:max-w-none">
 	{#if page.body !== null}
 		<PortableText
 			blocks={page.body}
