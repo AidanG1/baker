@@ -4,7 +4,6 @@
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import googleCalendarPlugin from '@fullcalendar/google-calendar';
 	import { ENV } from '$lib/env'
-	console.log(ENV)
 
 	let calendarEl;
 	let calendar;

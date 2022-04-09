@@ -9,7 +9,6 @@
 
 	// Remember to make your variables reactive so that they can reflect prop changes
 	// See: https://svelte.dev/docs#3_$_marks_a_statement_as_reactive
-    console.log(portableText)
 	$: mark = portableText.mark;
 </script>
 
