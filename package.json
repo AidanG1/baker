@@ -31,6 +31,7 @@
     "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.44.0",
     "svelte-check": "^2.2.6",
+    "svelte-fullcalendar": "^2.0.0-beta.0",
     "svelte-preprocess": "^4.10.1",
     "tailwindcss": "^3.0.23",
     "tslib": "^2.3.1",
@@ -38,6 +39,10 @@
   },
   "type": "module",
   "dependencies": {
+    "@fullcalendar/common": "^5.10.1",
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/daygrid": "^5.10.1",
+    "@fullcalendar/google-calendar": "^5.10.1",
     "@sanity/client": "^3.2.0",
     "@sanity/image-url": "^1.0.1",
     "@tailwindcss/typography": "^0.5.2",

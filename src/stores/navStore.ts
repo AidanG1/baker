@@ -1,4 +1,4 @@
-import { readable } from 'svelte/store';
+import { readable, derived } from 'svelte/store';
 import bakerClient from '$lib/sanity';
 
 export const nav_items = readable([], (set) => {
@@ -11,3 +11,8 @@ export const nav_items = readable([], (set) => {
         set(returned_pages.content)
     });
 });
+
+export const page_length = derived(
+	nav_items,
+	$nav_items => $nav_items.map(page => page.slug !== null).length
+);

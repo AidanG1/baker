@@ -8,7 +8,15 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		vite: {
+			resolve: {
+				dedupe: ['@fullcalendar/common'],
+			},
+			optimizeDeps: {
+				include: ['@fullcalendar/common'],
+			},
+		},
 	}
 };
 
