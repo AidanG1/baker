@@ -3,6 +3,7 @@
 	import Image from '../customComponents/Image.svelte';
 	import CustomHeading from '../customComponents/CustomHeading.svelte';
 	import CustomParagraph from '../customComponents/CustomParagraph.svelte';
+	import AbsoluteURL from '../customComponents/AbsoluteURL.svelte';
 	export let page: pageType;
 	import PortableText from '@portabletext/svelte';
 	import BackToTop from '../components/BackToTop.svelte';
@@ -19,6 +20,9 @@
 			serializers={{
 				types: {
 					image: Image
+				},
+				marks: {
+					link: AbsoluteURL
 				},
 				blockStyles: {
 					normal: CustomParagraph,
