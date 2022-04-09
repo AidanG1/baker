@@ -1,5 +1,6 @@
 <script>
 	import Calendar from '../components/Calendar.svelte';
+	import Map from '../components/Map.svelte';
 </script>
 
 <div class="hero min-h-screen" style="background-image: url(bg-light-theme.svg);">
@@ -17,6 +18,9 @@
 </div>
 
 <Calendar />
+<div class="flex justify-center">
+	<Map />
+</div>
 <!-- <iframe
 	src="https://calendar.google.com/calendar/embed?src=c_99gthh6cl5ktjjjc6hnuu4p1k8%40group.calendar.google.com&ctz=America%2FChicago"
 	style="border: 0"

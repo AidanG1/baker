@@ -4,7 +4,7 @@
 	async function getSocials() {
 		const query = '*[_type == "socials"]';
 		const socials = await bakerClient.fetch(query);
-		console.log(socials);
+		// console.log(socials);
 		return socials;
 	}
 </script>
