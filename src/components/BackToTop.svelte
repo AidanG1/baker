@@ -26,7 +26,7 @@
 
 <svelte:window on:scroll={handleOnScroll} />
 
-<div class="back-to-top btn text-4xl" on:click={goTop} class:hidden>↑</div>
+<div class="back-to-top btn text-4xl text-accent-content bg-accent" on:click={goTop} class:hidden>↑</div>
 
 <style>
 	.back-to-top {
@@ -37,8 +37,6 @@
 		right: 20px;
 		user-select: none;
 		bottom: 20px;
-		color: hsla(var(--bc) / var(--tw-text-opacity, 1));
-		background-color:  hsla(var(--b1) / var(--tw-text-opacity, 1));
 	}
 
 	.back-to-top.hidden {

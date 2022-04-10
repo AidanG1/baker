@@ -6,15 +6,11 @@ module.exports = {
       "light", "dark", "bumblebee", "halloween", 'dracula', 'autumn',
       {
         'baker_light': {
-          "primary": "#862616",
-          "secondary": "#f2b30c",
+          "primary": "#FCBA04",
+          "secondary": "#FCBA04",
           "accent": "#7e22ce",
           "neutral": "#b3baba",
           "base-100": "#ffe4e6",
-          "info": "#3961DB",
-          "success": "#61E5DA",
-          "warning": "#FAD16B",
-          "error": "#EC4B66",
         },
       },
       {

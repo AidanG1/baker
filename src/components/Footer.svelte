@@ -3,9 +3,10 @@
 	import FooterSocials from './FooterSocials.svelte';
 </script>
 
-<footer class="footer p-10 bg-neutral text-neutral-content">
+<footer class="footer p-10 bg-secondary text-secondary-content">
 	<div>
 		<img src="bakerCrest.svg" alt="Baker Logo" width="100" height="100" />
+		<p><a href="https://riceconnect.rice.edu/donation/support-baker-college" target="_blank" class="btn">Donate!</a></p>
 		<p>Baker College<br />Number One Since 1957<br />6320 Main Street<br />Houston, Texas 77005</p>
 	</div>
 	<div>
@@ -25,7 +26,7 @@
 	{#each $nav_items as dropdown}
 		{#if dropdown.slug === null}
 			<div>
-				<span class="footer-title">{dropdown.title}</span>
+				<span class="footer-title font-bold">{dropdown.title}</span>
 				{#each dropdown.pages as page}
 					<a sveltekit:prefetch href={page.slug.current}>{page.title}</a>
 				{/each}
@@ -33,3 +34,9 @@
 		{/if}
 	{/each}
 </footer>
+
+<style>
+	footer {
+		box-shadow: 0 100vh 0 100vh hsl(var(--s))
+	}
+</style>

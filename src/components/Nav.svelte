@@ -29,7 +29,7 @@
 				<InnerNav />
 			</ul>
 		</div>
-		<a class="btn btn-ghost normal-case text-3xl" href="/">
+		<a class="btn btn-ghost normal-case text-3xl text-accent" href="/">
 			Baker <img src="bakerCrest.svg" alt="Baker Logo" width="45" height="45" />
 		</a>
 	</div>
