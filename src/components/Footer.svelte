@@ -5,7 +5,7 @@
 
 <footer class="footer p-10 bg-neutral text-neutral-content">
 	<div>
-		<img src="bakerCrest.svg" alt="Baker Logo" width="100" />
+		<img src="bakerCrest.svg" alt="Baker Logo" width="100" height="100" />
 		<p>Baker College<br />Number One Since 1957<br />6320 Main Street<br />Houston, Texas 77005</p>
 	</div>
 	<div>

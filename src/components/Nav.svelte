@@ -30,7 +30,7 @@
 			</ul>
 		</div>
 		<a class="btn btn-ghost normal-case text-3xl" href="/">
-			Baker <img src="bakerCrest.svg" alt="Baker Logo" width="45" />
+			Baker <img src="bakerCrest.svg" alt="Baker Logo" width="45" height="45" />
 		</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
