@@ -40,11 +40,12 @@
 	</div>
 	<div class="navbar-end">
 		<ThemeChange />
-		<a class="btn" href="https://github.com/AidanG1/baker" target="_blank"
-			><picture>
+		<a class="btn" href="https://github.com/AidanG1/baker" target="_blank">
+			<!-- <picture>
 				<source srcset="/octocat1.avif" type="image/avif" width="45" />
 				<img src="/octocat1.png" alt="Github Logo" width="45" />
-			</picture>
+			</picture> -->
+			<img src="/octocat120x120.png" alt="Github Logo" width="45" height="45" />
 		</a>
 	</div>
 </div>
