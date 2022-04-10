@@ -8,6 +8,7 @@
 	src="https://www.openstreetmap.org/export/embed.html?bbox=-95.40262877941132%2C29.71552586630246%2C-95.39621829986574%2C29.718768465519926&amp;layer=mapnik&amp;marker=29.717147179004442%2C-95.39942353963852"
 	style="border: 1px solid black"
 	title="Baker OpenStreetMap"
+	loading="lazy"
 /><small
 	><a
 		class="btn"
