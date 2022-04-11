@@ -48,7 +48,10 @@
 			}).then((res) => {
 				console.log(res);
 				success = true;
-			});
+			}).catch((err) => {
+                console.log(err);
+                success = false;
+            });
 		}
 	}
 </script>
