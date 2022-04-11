@@ -6,12 +6,13 @@
 
 	let calendarEl;
 	let calendar;
-	
+
 	onMount(async () => {
 		await import('@fullcalendar/core/vdom');
 		calendar = new Calendar(calendarEl, {
 			plugins: [dayGridPlugin, googleCalendarPlugin],
-			googleCalendarApiKey: import.meta.env.VITE_GCAL_KEY,
+			// googleCalendarApiKey: import.meta.env.VITE_GCAL_KEY,
+			googleCalendarApiKey: 'AIzaSyCC4tBQDTotjL2YjmVjtlFIsv7KUwgSvGQ', // domain locked so okay to be here
 			initialView: 'dayGridMonth',
 			events: {
 				googleCalendarId: 'c_99gthh6cl5ktjjjc6hnuu4p1k8@group.calendar.google.com',
