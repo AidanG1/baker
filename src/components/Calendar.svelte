@@ -3,6 +3,7 @@
 	import { Calendar } from '@fullcalendar/core';
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import googleCalendarPlugin from '@fullcalendar/google-calendar';
+	import { ENV } from '$lib/env';
 
 	let calendarEl;
 	let calendar;
@@ -12,7 +13,7 @@
 		calendar = new Calendar(calendarEl, {
 			plugins: [dayGridPlugin, googleCalendarPlugin],
 			// googleCalendarApiKey: import.meta.env.VITE_GCAL_KEY,
-			googleCalendarApiKey: 'AIzaSyCC4tBQDTotjL2YjmVjtlFIsv7KUwgSvGQ', // domain locked so okay to be here
+			googleCalendarApiKey: ENV.GCAL_KEY, // domain locked so okay to be here
 			initialView: 'dayGridMonth',
 			events: {
 				googleCalendarId: 'c_99gthh6cl5ktjjjc6hnuu4p1k8@group.calendar.google.com',
@@ -23,7 +24,10 @@
 	});
 </script>
 
-<a class="btn normal-case" href="https://calendar.google.com/calendar/render?cid=c_99gthh6cl5ktjjjc6hnuu4p1k8%40group.calendar.google.com">
+<a
+	class="btn normal-case"
+	href="https://calendar.google.com/calendar/render?cid=c_99gthh6cl5ktjjjc6hnuu4p1k8%40group.calendar.google.com"
+>
 	Add this to Google Calendar
 </a>
 <div bind:this={calendarEl} />
