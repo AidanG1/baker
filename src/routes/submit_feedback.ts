@@ -13,23 +13,18 @@ const feedbackClient = sanityClient({
 
 /** @type {import('./submit_feedback').RequestHandler} */
 export async function post({ request }) {
-    request.json()
-        .then((r: feedback) => {
-            feedbackClient.create(r)
-                .then((res) => {
-                    return {
-                        status: 200,
-                        body: { res }
-                    };
-                })
-                .catch((err) => {
-                    console.log(err)
-                    return {
-                        status: 400,
-                        body: { err }
-                    };
-                })
-        })
-        .catch((err) => { return { status: 400, body: { err } } })
-    return { status: 200, body: { message: 'success' } }
+    let r: feedback = await request.json()
+    let res = await feedbackClient.create(r)
+    if (res) {
+        return {
+            status: 200,
+            body: { res }
+        }
+    } else {
+        console.log(res)
+        return {
+            status: 400,
+            body: { res }
+        };
+    }
 }
