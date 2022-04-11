@@ -46,7 +46,7 @@
 				method: 'post',
 				body: JSON.stringify(set_doc(name, email, happy, subject, message))
 			}).then((res) => {
-				// console.log(res);
+				console.log(res);
 				success = true;
 			});
 		}
