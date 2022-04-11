@@ -11,6 +11,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Baker College</title>
+</svelte:head>
+
 {#if isVisible}
 	<div id="confetti" class="justify-center flex">
 		<ConfettiExplosion colors={['#862616', '#f2b30c', '#b3baba', '#040404', '#b3baba']} />
