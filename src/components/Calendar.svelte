@@ -10,7 +10,7 @@
 
 	onMount(async () => {
 		await import('@fullcalendar/core/vdom');
-		console.log(ENV.TEST)
+		console.log(ENV.TEST);
 		calendar = new Calendar(calendarEl, {
 			plugins: [dayGridPlugin, googleCalendarPlugin],
 			// googleCalendarApiKey: import.meta.env.VITE_GCAL_KEY,
@@ -36,5 +36,12 @@
 <style>
 	:global(.gcal-event) {
 		text-transform: capitalize;
+		transition: transform 0.3s;
+	}
+
+	:global(.gcal-event:hover) {
+		transform: scale(1.3);
+		z-index: 50;
+		color: hsl(var(--a));
 	}
 </style>
