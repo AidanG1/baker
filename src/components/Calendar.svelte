@@ -10,6 +10,7 @@
 
 	onMount(async () => {
 		await import('@fullcalendar/core/vdom');
+		console.log(ENV.TEST)
 		calendar = new Calendar(calendarEl, {
 			plugins: [dayGridPlugin, googleCalendarPlugin],
 			// googleCalendarApiKey: import.meta.env.VITE_GCAL_KEY,

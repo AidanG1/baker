@@ -13,6 +13,6 @@
 	><a
 		class="btn"
 		href="https://www.openstreetmap.org/?mlat=29.71715&amp;mlon=-95.39942#map=18/29.71715/-95.39942"
-		target="_blank">View in New Tab</a
+		target="_blank">View Map in New Tab</a
 	></small
 >
