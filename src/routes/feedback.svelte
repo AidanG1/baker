@@ -9,6 +9,19 @@
 	let submitted = false;
 	let success = false;
 
+	function change_submitted(
+		name: string,
+		email: string,
+		subject: string,
+		message: string,
+		happy: number
+	) {
+		success = false;
+	}
+	$: {
+		change_submitted(name, email, subject, message, happy);
+	}
+
 	const set_doc = (
 		name: string,
 		email: string,
