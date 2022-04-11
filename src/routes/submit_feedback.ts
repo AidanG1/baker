@@ -14,17 +14,25 @@ const feedbackClient = sanityClient({
 /** @type {import('./submit_feedback').RequestHandler} */
 export async function post({ request }) {
     let r: feedback = await request.json()
-    let res = await feedbackClient.create(r)
-    if (res) {
-        return {
-            status: 200,
-            body: { res }
+    if (r._type === 'feedback') {
+        let res = await feedbackClient.create(r)
+        if (res) {
+            return {
+                status: 200,
+                body: { res }
+            }
+        } else {
+            console.log(res)
+            return {
+                status: 400,
+                body: { res }
+            };
         }
     } else {
-        console.log(res)
         return {
             status: 400,
-            body: { res }
-        };
+            body: { message: 'You must submit something of type feedback' }
+        }
     }
+
 }
