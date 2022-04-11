@@ -24,6 +24,16 @@ interface dropdownType {
     pages: Array<pageType>;
 }
 
+interface feedback {
+    _type: string,
+    name: string,
+    email: string,
+    happy: number,
+    subject: string,
+    message: string,
+}
+
 
 export type { pageType }
 export type { dropdownType }
+export type { feedback }

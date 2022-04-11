@@ -22,7 +22,7 @@ import sanityClient from "@sanity/client"
 const bakerClient = sanityClient({
     projectId: 'zfhxf8dx',
     dataset: 'production',
-    apiVersion: '2022-03-12', // use current UTC date - see "specifying API version"!
+    apiVersion: '2022-04-10', // use current UTC date - see "specifying API version"!
     token: '',
     // token: import.meta.env.SANITY_TOKEN, // or leave blank for unauthenticated usage
     useCdn: true, // `false` if you want to ensure fresh data

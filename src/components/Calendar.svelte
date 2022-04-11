@@ -3,16 +3,15 @@
 	import { Calendar } from '@fullcalendar/core';
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import googleCalendarPlugin from '@fullcalendar/google-calendar';
-	import { ENV } from '$lib/env'
 
 	let calendarEl;
 	let calendar;
-
+	
 	onMount(async () => {
 		await import('@fullcalendar/core/vdom');
 		calendar = new Calendar(calendarEl, {
 			plugins: [dayGridPlugin, googleCalendarPlugin],
-			googleCalendarApiKey: ENV.GCAL_KEY,
+			googleCalendarApiKey: import.meta.env.VITE_GCAL_KEY,
 			initialView: 'dayGridMonth',
 			events: {
 				googleCalendarId: 'c_99gthh6cl5ktjjjc6hnuu4p1k8@group.calendar.google.com',

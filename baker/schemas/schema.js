@@ -10,6 +10,7 @@ import dropdown from './dropdown'
 import nav from './nav'
 import page from './page'
 import socials from './socials'
+import feedback from './feedback'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,6 +25,7 @@ export default createSchema({
     nav,
     page,
     socials,
+    feedback,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

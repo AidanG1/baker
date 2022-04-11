@@ -6,10 +6,17 @@
 <footer class="footer p-10 bg-secondary text-secondary-content">
 	<div>
 		<img src="bakerCrest.svg" alt="Baker Logo" width="100" height="100" />
-		<p><a href="https://riceconnect.rice.edu/donation/support-baker-college" target="_blank" class="btn">Donate!</a></p>
+		<p>
+			<a
+				href="https://riceconnect.rice.edu/donation/support-baker-college"
+				target="_blank"
+				class="btn btn-accent">Donate!</a
+			>
+		</p>
 		<p>Baker College<br />Number One Since 1957<br />6320 Main Street<br />Houston, Texas 77005</p>
 	</div>
 	<div>
+		<p><a sveltekit:prefetch href="/feedback" class="btn btn-accent">Feedback</a></p>
 		<span class="footer-title">Socials</span>
 		<FooterSocials />
 	</div>
@@ -37,6 +44,6 @@
 
 <style>
 	footer {
-		box-shadow: 0 100vh 0 100vh hsl(var(--s))
+		box-shadow: 0 100vh 0 100vh hsl(var(--s));
 	}
 </style>
