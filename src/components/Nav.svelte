@@ -1,6 +1,7 @@
 <script>
 	import ThemeChange from './ThemeChange.svelte';
 	import InnerNav from './InnerNav.svelte';
+	import Search from './Search.svelte';
 </script>
 
 <div class="navbar bg-base-100 border-secondary border-b-2 border-bottom">
@@ -39,6 +40,7 @@
 		</ul>
 	</div>
 	<div class="navbar-end">
+		<Search />
 		<ThemeChange />
 		<a class="btn" href="https://github.com/AidanG1/baker" target="_blank">
 			<!-- <picture>
