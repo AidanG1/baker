@@ -11,14 +11,24 @@ type file = {
     url: string;
 }
 
+type slug = {
+    current: string;
+}
+
 interface pageType {
     body: Array<block>;
-    slug: object;
+    slug: slug;
     title: string;
     _updatedAt: string;
     files: Array<file>
 }
 
+interface searchResults {
+    slug: slug;
+    title: string;
+    plaintextBody: string;
+    _score: number;
+}
 interface dropdownType {
     title: string;
     pages: Array<pageType>;
@@ -35,5 +45,6 @@ interface feedback {
 
 
 export type { pageType }
+export type { searchResults }
 export type { dropdownType }
 export type { feedback }
