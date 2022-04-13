@@ -35,7 +35,7 @@
 			<div>
 				<span class="footer-title font-bold">{dropdown.title}</span>
 				{#each dropdown.pages as page}
-					<a sveltekit:prefetch href={page.slug.current}>{page.title}</a>
+					<a sveltekit:prefetch href={page.slug.current} class="hover:underline">{page.title}</a>
 				{/each}
 			</div>
 		{/if}

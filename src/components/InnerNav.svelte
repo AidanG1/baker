@@ -22,7 +22,7 @@
 			<ul class="dropdown-content menu p-2 shadow bg-secondary rounded-box z-50">
 				{#each nav_page.pages as nav_dropdown_page}
 					<li>
-						<a sveltekit:prefetch href={nav_dropdown_page.slug.current}>{nav_dropdown_page.title}</a
+						<a sveltekit:prefetch href={nav_dropdown_page.slug.current} class="hover:underline">{nav_dropdown_page.title}</a
 						>
 					</li>
 				{/each}
