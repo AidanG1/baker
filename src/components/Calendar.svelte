@@ -10,7 +10,7 @@
 
 	onMount(async () => {
 		await import('@fullcalendar/core/vdom');
-		console.log(ENV.TEST);
+		// console.log(ENV.TEST);
 		calendar = new Calendar(calendarEl, {
 			plugins: [dayGridPlugin, googleCalendarPlugin],
 			// googleCalendarApiKey: import.meta.env.VITE_GCAL_KEY,
@@ -29,7 +29,7 @@
 	class="btn normal-case"
 	href="https://calendar.google.com/calendar/render?cid=c_99gthh6cl5ktjjjc6hnuu4p1k8%40group.calendar.google.com"
 >
-	Add this to Google Calendar
+	Add the Baker calendar to your Google Calendar
 </a>
 <div bind:this={calendarEl} />
 
