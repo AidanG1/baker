@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	import Calendar from '../components/Calendar.svelte';
 	import Map from '../components/Map.svelte';
 	import { ConfettiExplosion } from 'svelte-confetti-explosion';
 	import { tick } from 'svelte';
-	let isVisible = false;
+	let isVisible: boolean = false;
 	async function visibility() {
 		isVisible = false;
 		await tick();
@@ -20,7 +20,7 @@
 		<ConfettiExplosion colors={['#862616', '#f2b30c', '#b3baba', '#040404', '#b3baba']} />
 	</div>
 {/if}
-<div class="hero min-h-screen" style="background-image: url(bg-light-theme.svg);">
+<div class="hero min-h-screen" style="background-image: url(bg-light-theme.svg)">
 	<div class="hero-overlay bg-opacity-60" />
 	<div class="hero-content text-center bg-base-100 rounded-lg">
 		<div class="max-w-md">

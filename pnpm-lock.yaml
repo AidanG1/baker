@@ -27,6 +27,7 @@ specifiers:
   svelte-check: ^2.2.6
   svelte-confetti-explosion: ^0.2.0
   svelte-fullcalendar: ^2.0.0-beta.0
+  svelte-parallax: ^0.5.0
   svelte-preprocess: ^4.10.1
   tailwindcss: ^3.0.23
   tslib: ^2.3.1
@@ -49,7 +50,7 @@ devDependencies:
   '@portabletext/svelte': 0.2.0_svelte@3.46.4
   '@sveltejs/adapter-auto': 1.0.0-next.34
   '@sveltejs/adapter-cloudflare': 1.0.0-next.15
-  '@sveltejs/kit': 1.0.0-next.310_svelte@3.46.4
+  '@sveltejs/kit': 1.0.0-next.311_svelte@3.46.4
   '@typescript-eslint/eslint-plugin': 5.14.0_e3f5f4efe2bd492e36eb6c1c619dfc98
   '@typescript-eslint/parser': 5.14.0_eslint@7.32.0+typescript@4.6.2
   autoprefixer: 10.4.2_postcss@8.4.8
@@ -63,6 +64,7 @@ devDependencies:
   svelte: 3.46.4
   svelte-check: 2.4.5_postcss@8.4.8+svelte@3.46.4
   svelte-fullcalendar: 2.0.0-beta.0_d287cf64e0e819f917edbcf966da9342
+  svelte-parallax: 0.5.0
   svelte-preprocess: 4.10.4_72e3ed8438c7a5ad59cfa8f107db69ec
   tailwindcss: 3.0.23_autoprefixer@10.4.2
   tslib: 2.3.1
@@ -857,8 +859,8 @@ packages:
       esbuild: 0.14.29
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.310_svelte@3.46.4:
-    resolution: {integrity: sha512-pTyMyaoyHS+V5cQZIQMfQXmLkhw1VaRwT9avOSgwDc0QBpnNw2LdzwoPYsUr96ca5B6cfT3SMUNolxErTNHmPQ==}
+  /@sveltejs/kit/1.0.0-next.311_svelte@3.46.4:
+    resolution: {integrity: sha512-OkRIi0XBXcs16J+H+6fgOeFYxKu05gamY08KHAQ5cohjymUODGWIwaIfwAuNkZAcEEr8Vh2ejp4UcaxNzD53lQ==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -2280,6 +2282,10 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
+  /focus-options-polyfill/1.6.0:
+    resolution: {integrity: sha512-uyrAmLZrPnUItQY5wTdg31TO9GGZRGsh/jmohUg9oLmLi/sw5y7LlTV/mwyd6rvbxIOGwmRiv6LcTS8w7Bk9NQ==}
+    dev: true
+
   /follow-redirects/1.14.9_debug@2.6.9:
     resolution: {integrity: sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==}
     engines: {node: '>=4.0'}
@@ -3571,6 +3577,12 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.46.4
+    dev: true
+
+  /svelte-parallax/0.5.0:
+    resolution: {integrity: sha512-yBdkOms3+J71hm9lFDUkwi9EHgq3g2y3YLne87sR/4xE3wsjeR8llOmJ89pZ23AmsTJ7a3WaUA0zi6ytaVnYQA==}
+    dependencies:
+      focus-options-polyfill: 1.6.0
     dev: true
 
   /svelte-preprocess/4.10.4_72e3ed8438c7a5ad59cfa8f107db69ec:
