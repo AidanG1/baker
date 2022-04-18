@@ -14,6 +14,15 @@ function authorize() {
     return jwtClient
 }
 
+function authCallback(auth) {
+    console.log('Google authorization succeeded');
+    this.auth = auth;
+    this.drive = google.drive({version: 'v3', auth});
+    
+    // this.drive.files.list().then((res) => console.log('files: ', res.data));
+  }
+
+
 /** @type {import('./get__google_doc').RequestHandler} */
 export async function get({ request, params }) {
     // const response = await fetch(`https://content.googleapis.com/drive/v3/files/
@@ -36,10 +45,13 @@ export async function get({ request, params }) {
     const drive = google.drive({ version: 'v3', auth: authorize() });
     var fileId = params.id;
     var dest = fs.createWriteStream(`./tmp/${params.id}.html`);
-    drive.files.export({
+    let dfe = drive.files.export({
         fileId: fileId,
         mimeType: 'text/html',
     })
+    console.log(dfe)
+    console.log(await dfe)
+    dfe
         .on('end', function () {
             console.log('Done');
         })
