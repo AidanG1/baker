@@ -1,4 +1,3 @@
-
 import type { feedback } from '$lib/types';
 import sanityClient from "@sanity/client"
 

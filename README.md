@@ -28,6 +28,7 @@
     </li>
     <li><a href="#hosted-version">Hosted</a></li>
     <li><a href="#developing">Developing</a></li>
+    <li><a href="#env">Env</a></li>
     <li><a href="#building">Building</a></li>
     <li><a href="#testing">Testing</a></li>
     <li><a href="#sanity">Sanity</a></li>
@@ -48,8 +49,9 @@ This is the website for Baker College at Rice University created by Aidan Gerber
 * [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## ⚡ Hosted Version
+
 This website is currently hosted at <a href="https://baker.pages.dev/" target="_blank">baker.pages.dev</a>. The Sanity studio is hosted at <a href="https://baker.sanity.studio/" target="_blank">baker.sanity.studio</a>. To edit website content make a Sanity account and contact me with your account and I will add you to the content editor.
-## ⌨️ Developing<a name="developing"></a>
+## ⌨️ Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -59,6 +61,15 @@ npm run dev
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
+## 🗺️ Env
+
+Create a file called .env in the outermost directory. The file should contain 3 tokens. The VITE_ prefix is necessary so that vite can access the tokens. When developing make sure to only access these from the server side.
+```txt
+VITE_SANITY_FEEDBACK_TOKEN=token with edit permissions for Sanity
+VITE_GCAL_KEY=token with view permissions for Google Calendar
+VITE_GOOGLE_DOCS=token with export permissions for Google Drive/Docs
+```
+
 ## 🔨 Building
 
 To create a production version of your app:
