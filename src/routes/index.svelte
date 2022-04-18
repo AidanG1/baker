@@ -34,7 +34,7 @@
 	</div>
 </div>
 
-<Calendar />
-<div class="flex justify-center">
+<div class="flex flex-col justify-center md:flex-row">
+	<Calendar />
 	<Map />
 </div>
